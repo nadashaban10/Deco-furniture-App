@@ -59,7 +59,7 @@ const Header = () => {
   const totalItems = cart.length;
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full  bg-white">
       <div className="header-top bg-[#FAF9F7] md-lg:hidden ">
         <div className="w-[85%] lg:w[90%] mx-auto">
           <div className="flex w-full justify-between items-center h-[60px] text-[#0F233C]">
@@ -135,12 +135,12 @@ const Header = () => {
           <div className=" md-lg:h[100px] flex justify-between items-center flex-wrap">
             {/* ===== Left part ====== */}
             <div className="md-lg:w-full w-3/12 ">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center  ">
                 <Link to="/">
-                  <img
+                  <img 
                     src="https://deco-furniture-app.vercel.app/images/logo-only.png"
                     alt=" logo"
-                    style={{ width: "220px" }}
+                    style={{ width: "180px" }}
                   />
                 </Link>
                 <div className="flex gap-3">
@@ -269,7 +269,7 @@ const Header = () => {
             <img
               src="https://deco-furniture-app.vercel.app/images/logo-sm.png"
               alt=" logo"
-              style={{ width: "220px", marginTop: "20px" }}
+              style={{ width: "190px", marginTop: "20px" }}
             />
           </Link>
           {/* - - Menu - - */}

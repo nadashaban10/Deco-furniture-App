@@ -49,7 +49,7 @@ function SearchBar() {
           {/* - - - search input - - -  */}
           <div className="w-full">
             <input
-              className="border-0 bg-transparent  text-slate-500 outline-none px-3 h-full"
+              className="border-0 bg-transparent sm:w-[165px] text-slate-500 outline-none px-3 h-full"
               onChange={handleSearchChange}
               value={input}
               type="text"
@@ -101,7 +101,7 @@ function SearchBar() {
               <FontAwesomeIcon icon={faTimes} />
             </button>
           )}
-          <button className="h-full uppercase font-semibold px-6 w-5/12 text-white bg-[#1F212A] hover:bg-[#BC9B80] transition-all duration-300 flex items-center justify-center gap-6">
+          <button className="h-full uppercase sm:w-[150px] font-semibold px-6 w-5/12 text-white bg-[#1F212A] hover:bg-[#BC9B80] transition-all duration-300 flex items-center justify-center gap-6">
             Search
             <FaMagnifyingGlass />
           </button>

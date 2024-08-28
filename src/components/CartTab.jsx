@@ -36,7 +36,7 @@ const CartTab = () => {
         }`}
       >
         <div className="flex justify-between items-center">
-          <h2 className="p-5 text-white text-3xl text-center">Shopping Cart</h2>
+          <h2 className="p-5 text-white text-3xl sm:text-[25px] text-center">Shopping Cart</h2>
           <button
             className="h-full text-white bg-transparent border-2 hover:bg-[#BC9B80] transition-all duration-300 px-10 py-[10px]"
             onClick={handleClearCart}

@@ -85,7 +85,7 @@ const Shop = () => {
     <div>
       <Header />
       <section
-        className="h-[400px] md-lg:h-[300px] bg-cover mt-5 bg-no-repeat bg-center relative w-full"
+        className="h-[400px] md-lg:h-[300px] bg-cover mt-5 bg-no-repeat bg-center relative w-full "
         style={{
           backgroundImage: "url(http://localhost:3000/images/banner/3.jpg)",
         }}

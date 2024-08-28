@@ -36,17 +36,17 @@ const CartItem = ({ productId, quantity, discountedPrice }) => {
   return (
     <div className="flex items-center bg-white text-black p-2 my-3 border-b-2 border-slate-700 gap-2">
       <div
-        className="flex w-3/12 h-[100px] justify-center items-center overflow-hidden"
+        className="flex w-3/12 sm:w-3/12 h-[100px] justify-center items-center overflow-hidden"
         onClick={handleNavigateToProduct}
       >
         <img
           src={productId.image}
           alt={productId.title}
-          className="w-full h-full object-cover"
+          className="w-full sm:w-full h-full object-cover"
         ></img>
       </div>
-      <div className="w-6/12 p-3">
-        <h3 className="font-semibold">{productId.title}</h3>
+      <div className="w-4/12 p-3">
+        <h3 className="font-semibold w-[7px] sm:w-[5px]">{productId.title}</h3>
         {productId.discount ? (
           <span className="">
             <span className="line-through mr-2">
@@ -62,8 +62,8 @@ const CartItem = ({ productId, quantity, discountedPrice }) => {
       </div>
       <div className="w-3/12 flex justify-between items-center">
         <div>
-          <div className="font-semibold ">Qty</div>
-          <div>{quantity}</div>
+        
+        <div className="font-semibold mr-1">Qty {quantity}</div>
         </div>
         <button
           className=" text-slate-600 hover:text-[#BC9B80] text-lg transition-all duration-300 "
