@@ -42,7 +42,7 @@ const Banner = () => {
                   <Link key={index} to="#">
                     <img
                       className="banner-img"
-                      src={`https://e-commerce-project-deploy.vercel.app//images/banner/${img}.jpg`}
+                      src={`/images/banner/${img}.jpg`}
                       alt="banner"
                     />
                   </Link>
