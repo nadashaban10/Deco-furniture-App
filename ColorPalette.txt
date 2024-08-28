@@ -1,0 +1,16 @@
+====== Main colors ===========
+
+Grey #F5F5F5
+Dark #1F212A [text, buttons]
+
+Navy #0F233C
+
+
+
+======= Colors ========
+Dark Biege #BC9B80 [hover]
+Light Biege #FAF9F7 [background]
+
+
+
+Orange #F97316
