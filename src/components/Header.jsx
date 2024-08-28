@@ -138,7 +138,7 @@ const Header = () => {
               <div className="flex justify-between items-center">
                 <Link to="/">
                   <img
-                    src="http://localhost:3000/images/logo-only.png"
+                    src="https://deco-furniture-app.vercel.app/images/logo-only.png"
                     alt=" logo"
                     style={{ width: "220px" }}
                   />
@@ -267,7 +267,7 @@ const Header = () => {
         >
           <Link to="/">
             <img
-              src="http://localhost:3000/images/logo-sm.png"
+              src="https://deco-furniture-app.vercel.app/images/logo-sm.png"
               alt=" logo"
               style={{ width: "220px", marginTop: "20px" }}
             />

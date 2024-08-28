@@ -71,7 +71,7 @@ const Banner = () => {
             >
               <div className="w-full h-full relative custom-hover-effect transform transition-all duration-500 p-3">
                 <img
-                  src={`http://localhost:3000/images/products/${
+                  src={`https://deco-furniture-app.vercel.app/images/products/${
                     index + 1
                   }.webp`}
                   alt="products"
