@@ -5,6 +5,7 @@ import { FaTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Element } from "react-scroll";
+import logo from '../images/logo-only.png'
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <img
                 className="w-[190px] h-[70px]"
-                src="https://deco-furniture-app.vercel.app/images/logo-only.png"
+                src= {logo}
                 alt="logo"
               />
               <ul className="flex flex-col gap-2 text-slate-600">
