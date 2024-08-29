@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import { register } from "../redux/reducers/authSlice";
 import { FaFacebookF, FaGooglePlusG } from "react-icons/fa";
 
+import '../../src/images/banner/4.jpg'
 const Register = () => {
   const [state, setState] = useState({
     name: "",
@@ -37,7 +38,7 @@ const Register = () => {
   return (
     <>
       <Header />
-      <div className="relative bg-[url('images/banner/3.jpg')] flex items-center bg-cover bg-center h-[80vh] pt-2 pb-2 justify-center pl-5 ">
+      <div className="relative bg-[url('../../src/images/banner/3.jpg'')] flex items-center bg-cover bg-center h-[80vh] pt-2 pb-2 justify-center pl-5 ">
         <div className="absolute inset-0 bg-white opacity-50"></div>
         <div className="relative bg-white p-8 border-none max-w-lg font-serif w-full">
           <h1 className="text-2xl font-bold mb-6 text-slate-600 text-center">

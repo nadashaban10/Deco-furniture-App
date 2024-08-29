@@ -3,6 +3,14 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 
+import img1 from '../../src/images/banner/1.jpg';
+import img2 from '../../src/images/banner/2.jpg';
+import img3 from '../../src/images/banner/3.jpg';
+import img4 from '../../src/images/banner/4.jpg';
+
+
+const images = [img1, img2, img3, img4];
+
 const Banner = () => {
   const responsive = {
     superLargeDesktop: {
@@ -38,12 +46,12 @@ const Banner = () => {
                 responsive={responsive}
                 className="z-0"
               >
-                {[1, 2, 3, 4, 5].map((img, index) => (
+                {images.map((img, index) => (
                   <Link key={index} to="#">
                     <img
                       className="banner-img"
-                      src={`/images/banner/${img}.jpg`}
-                      alt="banner"
+                      src={img}
+                      alt={`banner ${index + 1}`}
                     />
                   </Link>
                 ))}
