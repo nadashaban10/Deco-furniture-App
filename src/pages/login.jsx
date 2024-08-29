@@ -6,7 +6,7 @@ import Nav from "../components/nav";
 import { logInUser } from "../redux/reducers/authSlice";
 import { FaFacebookF, FaGooglePlusG } from "react-icons/fa";
 import Header from "../components/Header";
-import '../../src/images/banner/4.jpg'
+import '../../src/images/logo-only.png'
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -41,7 +41,7 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div className="relative bg-[url('../../src/images/banner/3.jpg'')] flex items-center bg-cover bg-center h-[70vh] pt-2 pb-2 justify-center pl-5 ">
+      <div className="relative bg-[url('../../src/images/logo-only.png')] flex items-center bg-cover bg-center h-[70vh] pt-2 pb-2 justify-center pl-5 ">
         <div className="flex justify-center items-center absolute inset-0 bg-white opacity-50"></div>
         <div className="relative bg-white p-8 border-none max-w-md font-serif w-full">
           <h1 className="text-2xl font-bold mb-6 text-slate-600 text-center">
