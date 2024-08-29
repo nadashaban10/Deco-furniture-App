@@ -87,7 +87,7 @@ const Shop = () => {
       <section
         className="h-[400px] md-lg:h-[300px] bg-cover mt-5 bg-no-repeat bg-center relative w-full "
         style={{
-          backgroundImage: "url(https://e-commerce-project-deploy.vercel.app/images/banner/3.jpg)",
+          backgroundImage: "url(images/banner/3.jpg)",
         }}
       >
         <div className="custom-black-overlay">
