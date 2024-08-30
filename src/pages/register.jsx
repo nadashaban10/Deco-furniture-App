@@ -38,7 +38,7 @@ const Register = () => {
   return (
     <>
       <Header />
-      <div className="relative flex items-center bg-cover bg-center h-[80vh] pt-2 pb-2 justify-center pl-5 "
+      <div className="relative flex items-center bg-cover bg-center h-[80vh] pt-2 pb-2 justify-center p-2 "
       style={{ backgroundImage: `url(${loginimage})` }} >
         <div className="absolute inset-0 bg-white opacity-50"></div>
         <div className="relative bg-white p-8 border-none max-w-lg font-serif sm:mt-2  sm:mb-2  w-full">
