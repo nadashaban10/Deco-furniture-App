@@ -43,7 +43,7 @@ const Login = () => {
     <>
       <Header />
       <div
-        className="relative flex items-center bg-cover bg-center h-[70vh] pt-2 pb-2 justify-center pl-5"
+        className="relative flex items-center bg-cover bg-center h-[70vh] pt-2 pb-2 justify-center "
         style={{ backgroundImage: `url(${loginimage})` }}
       >
         <div className="flex justify-center items-center absolute inset-0 bg-white opacity-50"></div>
