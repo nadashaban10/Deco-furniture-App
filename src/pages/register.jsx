@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import { register } from "../redux/reducers/authSlice";
 import { FaFacebookF, FaGooglePlusG } from "react-icons/fa";
 
-import '../../src/images/logo-only.png'
+import loginimage from '../images/banner/3.jpg';
 const Register = () => {
   const [state, setState] = useState({
     name: "",
@@ -38,14 +38,15 @@ const Register = () => {
   return (
     <>
       <Header />
-      <div className="relative bg-[url('../../src/images/logo-only.png')] flex items-center bg-cover bg-center h-[80vh] pt-2 pb-2 justify-center pl-5 ">
+      <div className="relative flex items-center bg-cover bg-center h-[80vh] pt-2 pb-2 justify-center pl-5 "
+      style={{ backgroundImage: `url(${loginimage})` }} >
         <div className="absolute inset-0 bg-white opacity-50"></div>
-        <div className="relative bg-white p-8 border-none max-w-lg font-serif w-full">
+        <div className="relative bg-white p-8 border-none max-w-lg font-serif sm:m-2 m-2 w-full">
           <h1 className="text-2xl font-bold mb-6 text-slate-600 text-center">
             Register Page
           </h1>
           <form onSubmit={handleSubmit}>
-            <div className="mb-2">
+            <div className="mb\-2">
               <label
                 className="block text-slate-600 text-sm font-bold mb-1"
                 htmlFor="name"

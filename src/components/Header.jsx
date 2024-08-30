@@ -5,7 +5,7 @@ import { loadUserFromToken, logOutUser } from "../redux/reducers/authSlice";
 import { MdEmail } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import '../images/logo-only.png'
+ import logo from '../images/logo-only.png'
 import {
   FaPhone,
   FaTwitter,
@@ -18,7 +18,7 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiShoppingCart } from "react-icons/fi";
- const logo = logo;
+ const logoimage = logo;
 const Header = () => {
   const dispatch = useDispatch();
   const { userId, userName, isAuthenticated } = useSelector(
@@ -139,8 +139,8 @@ const Header = () => {
               <div className="flex justify-between items-center  ">
                 <Link to="/">
                   <img 
-                    src="{logo}"
-                    alt=" logo"
+                    src={logoimage}
+                    alt=" logoimage"
                     style={{ width: "180px" }}
                   />
                 </Link>
@@ -268,7 +268,7 @@ const Header = () => {
         >
           <Link to="/">
             <img
-              src="https://deco-furniture-app.vercel.app/images/logo-sm.png"
+              // src="https://deco-furniture-app.vercel.app/images/logo-sm.png"
               alt=" logo"
               style={{ width: "190px", marginTop: "20px" }}
             />

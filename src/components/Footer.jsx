@@ -5,8 +5,10 @@ import { FaTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Element } from "react-scroll";
-import '../images/logo-only.png'
+import logo from '../images/logo-only.png'
 
+
+const logoimage = logo;
 const Footer = () => {
   return (
     <Element name="footer">
@@ -16,7 +18,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <img
                 className="w-[190px] h-[70px]"
-                src= '../images/logo-only.png'
+                src={logoimage}
                 alt="logo"
               />
               <ul className="flex flex-col gap-2 text-slate-600">

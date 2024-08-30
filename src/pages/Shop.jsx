@@ -6,7 +6,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { Range } from "react-range";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "../redux/reducers/categoriesSlice";
-import '../../src/images/banner/4.jpg'
+import imgshop from '../images/banner/shop.png';
 import {
   fetchProducts,
   fetchProductsByCategory,
@@ -24,7 +24,7 @@ import ShopProducts from "../components/product/ShopProducts";
 import Pagination from "../components/Pagination";
 import Products from "../components/product/Products";
 import CartTab from "../components/CartTab";
-
+ const image = [imgshop];
 const Shop = () => {
   const [filter, setFilter] = useState(true);
   const [rating, setRating] = useState(0);
@@ -88,7 +88,7 @@ const Shop = () => {
       <section
         className="h-[400px] md-lg:h-[300px] bg-cover mt-5 bg-no-repeat bg-center relative w-full "
         style={{
-          backgroundImage: "url('../../src/images/banner/4.jpg')",
+          backgroundImage: `url(${image[0]})`,
         }}
       >
         <div className="custom-black-overlay">
