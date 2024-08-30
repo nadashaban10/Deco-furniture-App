@@ -268,7 +268,7 @@ const Header = () => {
         >
           <Link to="/">
             <img
-              // src="https://deco-furniture-app.vercel.app/images/logo-sm.png"
+              src={logoimage}
               alt=" logo"
               style={{ width: "190px", marginTop: "20px" }}
             />
@@ -355,7 +355,7 @@ const Header = () => {
             ) : (
               <Link
                 className="flex cursor-pointer justify-center items-center gap-2"
-                to="/"
+                to="/login"
               >
                 <span>
                   <FaLock />
