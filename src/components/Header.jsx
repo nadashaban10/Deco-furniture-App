@@ -351,13 +351,14 @@ const Header = () => {
                
                <span className=" text-slate-600">Welcome, {userName}</span>
                
-               <button
+               
+             </Link>
+             <button
                       onClick={handleLogout}
                       className=" text-slate-600 font-semibold hover:text-[#BC9B80] focus:outline-none"
                     >
                       Log Out
                     </button>
-             </Link>
            </div>
             ) : (
               <Link
