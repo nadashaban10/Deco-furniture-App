@@ -40,8 +40,6 @@ const ProductCard = ({ product }) => {
     }
   };
 
- 
-
   const handleClickAddToCart = (e, product) => {
     e.stopPropagation();
 
@@ -103,7 +101,7 @@ const ProductCard = ({ product }) => {
 
       </div>
 
-      <div className="py-3 text-slate-600 p-4 mt-2">
+      <div className="py-3 text-slate-600 pl-3 mt-2">
         {/* Conditional Rendering for Product Title */}
         {product.title ? (
           <h2 className="font-semibold text-slate-600 text-lg">
@@ -113,15 +111,15 @@ const ProductCard = ({ product }) => {
           <div>No title available</div>
         )}
 
-        <div className="flex justify-start flex-col items-start gap-3 my-2">
+        <div className="flex flex-col items-start gap-3 my-2 ">
           {/* Price and Discount Handling */}
           {product.discount ? (
             <div>
               <span className="text-lg font-semibold text-green-600 mt-3">
-              {(product.price - (product.price * product.discount) / 100).toFixed(2)}$
+                {(product.price - (product.price * product.discount) / 100).toFixed(2)}$
               </span>
               <span className="text-md ml-3 mt-3 line-through">
-              {product.price.toFixed(2)}$
+                {product.price.toFixed(2)}$
               </span>
             </div>
           ) : (
@@ -132,8 +130,8 @@ const ProductCard = ({ product }) => {
             <Rating rating={product.rating} />
           </div>
 
-          <div className="h-[50px]">
-            <AddToCartButton product={product} userId={userId} />
+          <div className="h-[50px] items-center">
+            <AddToCartButton  product={product} userId={userId} />
           </div>
         </div>
       </div>

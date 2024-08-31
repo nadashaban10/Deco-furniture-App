@@ -49,7 +49,7 @@ const Banner = () => {
                 {images.map((img, index) => (
                   <Link key={index} to="#">
                     <img
-                      className="banner-img"
+                      className="banner-img sm:h-[210px]"
                       src={img}
                       alt={`banner ${index + 1}`}
                     />

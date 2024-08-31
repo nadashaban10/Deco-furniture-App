@@ -116,7 +116,7 @@ const ProductDetails = () => {
                 </div>
               </div>
               {/* ======== add to cart buttons */}
-              <div className="h-[50px] md-lg:mb-5 gap-5 mt-10 md-lg:flex-wrap flex justify-center">
+              <div className="h-[50px] md-lg:mb-5 gap-5 mt-10 md-lg:flex-wrap flex justify-center sm:text-nowrap">
                 <div className=" bg-white p-2  text-black flex gap-2 justify-center items-center">
                   <button
                     className=" h-full w-10 font-bold text-xl flex justify-center hover:text-[#BC9B80] items-center"
@@ -128,7 +128,7 @@ const ProductDetails = () => {
                     {quantity}
                   </span>
                   <button
-                    className=" h-full w-10 font-bold text-2xl hover:text-[#BC9B80] flex justify-center items-center"
+                    className=" h-full w-10 font-bold text-2xl hover:text-[#BC9B80] flex justify-center items-center sm:w-[50px]"
                     onClick={() => handleMinusQuantity()}
                   >
                     -

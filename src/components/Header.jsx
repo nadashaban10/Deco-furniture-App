@@ -5,7 +5,7 @@ import { loadUserFromToken, logOutUser } from "../redux/reducers/authSlice";
 import { MdEmail } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
- import logo from '../images/logo-only.png'
+import logo from "../images/logo-only.png";
 import {
   FaPhone,
   FaTwitter,
@@ -18,7 +18,7 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiShoppingCart } from "react-icons/fi";
- const logoimage = logo;
+const logoimage = logo;
 const Header = () => {
   const dispatch = useDispatch();
   const { userId, userName, isAuthenticated } = useSelector(
@@ -135,35 +135,43 @@ const Header = () => {
         <div className="w-[85%] h-[120px] md-lg:h[120px] lg:w[90%] mx-auto  border-b">
           <div className=" md-lg:h[100px] flex justify-between items-center flex-wrap">
             {/* ===== Left part ====== */}
-            <div className="md-lg:w-full w-3/12 ">
+            <div className="md-lg:w-full w-3/12 mb-0 ">
               <div className="flex justify-between items-center  ">
                 <Link to="/">
-                  <img 
+                  <img
                     src={logoimage}
                     alt=" logoimage"
                     style={{ width: "180px" }}
                   />
                 </Link>
                 <div className="flex gap-3">
-                  <div
-                    className="justify-center items-center cursor-pointer lg:hidden xl:hidden md-lg:flex hidden"
-                    onClick={() => setshowSideBar(!showSideBar)}
-                  >
-                    <span>
-                      <GiHamburgerMenu size="40px" color="#4B505E" />
-                    </span>
-                  </div>
-                  <div className="lg:hidden xl:hidden md-lg:flex hidden">
-                    <span className="flex relative justify-center items-center cursor-pointer rounded-full w-[40px] h-[40px]  text-slate-600 hover:text-[#BC9B80]">
-                      <span onClick={handleCartClick} className="text-3xl">
-                        <FiShoppingCart />
-                      </span>
-                      <span className="absolute w-[20px] h-[20px] bg-[#BC9B80] text-white flex justify-center items-center rounded-full -top-[3px] -right-[6px]">
-                        {totalItems}
-                      </span>
-                    </span>
-                  </div>
-                </div>
+  <div
+    className="justify-center items-center cursor-pointer lg:hidden xl:hidden md-lg:flex hidden"
+    onClick={() => setshowSideBar(!showSideBar)}
+  >
+    <div className="lg:hidden xl:hidden md-lg:flex hidden pl-3 mt-2 mr-3"> {/* Added gap-4 here */}
+      <span className="flex relative justify-center items-center cursor-pointer rounded-full w-[40px] h-[40px] text-slate-600 hover:text-[#BC9B80] px-2">
+        <span onClick={handleCartClick} className="text-3xl">
+          <FiShoppingCart />
+        </span>
+        <span className="absolute w-[20px] h-[20px] bg-[#BC9B80] text-white flex justify-center items-center rounded-full -top-[3px] -right-[6px]">
+          {totalItems}
+        </span>
+      </span>
+      <span className="flex relative justify-center items-center cursor-pointer rounded-full w-[40px] h-[40px] text-[#1F212A] hover:text-[#BC9B80] px-2">
+        <span className="text-3xl">
+          <FaRegHeart onClick={handleWishlistClick} />
+        </span>
+        <span className="absolute w-[20px] h-[20px] bg-[#BC9B80] text-white flex justify-center items-center rounded-full -top-[3px] -right-[6px]">
+          {userId ? wishlistItems.length : 0}
+        </span>
+      </span>
+    </div>
+    <span className="px-2">
+      <GiHamburgerMenu size="40px" color="#4B505E" />
+    </span>
+  </div>
+</div>
               </div>
             </div>
             {/* ====== two-third part ====== */}
