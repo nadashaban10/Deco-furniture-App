@@ -323,18 +323,10 @@ const Header = () => {
                 about us
               </Link>
             </li>
-            <li>
-              <Link
-                className={`py-2 block ${
-                  pathname === "/contact" ? "text-[#BC9B80]" : "text-slate-600"
-                } hover:text-[#BC9B80]`}
-              >
-                contact us
-              </Link>
-            </li>
+           
           </ul>
           {/* - - Social Links - - */}
-          <div className="flex justify-center items-center gap-4 text-[1.5rem]">
+          <div className="flex justify-center items-center  text-slate-600 gap-4 text-[1.5rem]">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="hover:text-[#BC9B80]" href="#">
               <FaFacebook />
@@ -349,17 +341,24 @@ const Header = () => {
             </a>
           </div>
           {/* User */}
-          <div className="m-4 border-t-2 pt-3">
+          <div className="m-4 border-t-2 pt-3 ">
             {isAuthenticated ? (
-              <Link
-                className="flex cursor-pointer justify-center items-center gap-2"
-                to="/orderhistory"
-              >
-                <span>
-                  <FaUser />
-                </span>
-                <span>Welcome, {userName} </span>
-              </Link>
+             <div className="flex flex-col items-center">
+             <Link
+               className="flex flex-col cursor-pointer justify-center items-center gap-2"
+               to="/orderhistory"
+             >
+               
+               <span className=" text-slate-600">Welcome, {userName}</span>
+               
+               <button
+                      onClick={handleLogout}
+                      className=" text-slate-600 font-semibold hover:text-[#BC9B80] focus:outline-none"
+                    >
+                      Log Out
+                    </button>
+             </Link>
+           </div>
             ) : (
               <Link
                 className="flex cursor-pointer justify-center items-center gap-2"
