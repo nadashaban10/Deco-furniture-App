@@ -353,12 +353,14 @@ const Header = () => {
                
                
              </Link>
+             <div>
              <button
                       onClick={handleLogout}
                       className=" text-slate-600 font-semibold hover:text-[#BC9B80] focus:outline-none"
                     >
                       Log Out
                     </button>
+                    </div>
            </div>
             ) : (
               <Link
